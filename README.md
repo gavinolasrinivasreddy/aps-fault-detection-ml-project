@@ -13,3 +13,5 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+# readme file give instructions to user, regrading the program
+# to check git version we have to type git--version in terminol

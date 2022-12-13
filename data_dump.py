@@ -14,6 +14,10 @@ if __name__== "__main__":
     print(f"number of rows and columns {df.shape}")
     # convert data frame csv to json because mongodb we save the data in json
     df.reset_index(drop = True, inplace = True) # inplace mean over return on same location
+    # df.T.to_json()
+    #json.loads(df.T.to_json() it will give dictionary
+    #json.loads(df.T.to_json()).values(), we need only values and every think we want to convert in list
+
     json_record = list(json.loads(df.T.to_json()).values())
     print(json_record[0])
     #dumping in mango DB
